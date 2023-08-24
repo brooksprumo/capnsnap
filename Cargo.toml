@@ -1,0 +1,21 @@
+[package]
+name = "capnsnap"
+version = "0.1.0"
+edition = "2021"
+license-file = "LICENSE.md"
+publish = false
+
+[dependencies]
+anyhow = "1.0.75"
+capnp = "0.17.2"
+clap = { version = "4.3.23", features = ["derive"] }
+env_logger = "0.10.0"
+im = "15.1.0"
+itertools = "0.11.0"
+log = "0.4.20"
+solana-runtime = { git = "https://github.com/brooksprumo/solana.git", rev = "d31f61e679" }
+solana-sdk = { git = "https://github.com/brooksprumo/solana.git", rev = "d31f61e679" }
+tempfile = "3.8.0"
+
+[build-dependencies]
+capnpc = "0.17.2"
